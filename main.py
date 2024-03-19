@@ -14,6 +14,7 @@ class MyServer(BaseHTTPRequestHandler):
 
     def __get_index(self):
         return """
+        <!doctype html>
         <html lang="en">
         <head>
             <meta charset="utf-8">
@@ -381,7 +382,8 @@ class MyServer(BaseHTTPRequestHandler):
         </script>
         </body>
         </html>
-                """
+        """
+
 
     def do_GET(self):
         """ Метод для обработки входящих GET-запросов """
